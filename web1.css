@@ -1,0 +1,121 @@
+body{
+    overflow: hidden;
+}
+
+.grid-1{
+    display:grid;
+    grid-template-columns: auto auto;  /* grid has two columns; content defines width */
+    justify-content:space-between;
+    align-content:space-between;
+}
+.navbar{
+    margin-top: 25px;
+}
+.navbar a:hover{
+    text-decoration:1px underline;
+}
+.grid-1 a{
+    text-decoration: none;
+    color: black;
+    padding:0px;
+    margin:0px;
+}
+
+.grid-2{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+
+.grid-3{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 5px;
+}
+
+.grid-4{
+    display:grid;
+    grid-template-rows:auto;
+    place-items: center;
+    gap: 50px;
+}
+
+.grid-5{
+    display: grid;
+    position:relative;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: flex-end;
+    gap:10px;
+    right:30px;
+    top:10px;
+}
+
+.grid-6{
+    width: 100%;
+    display: grid;
+    position:relative;
+    grid-template-columns: repeat(2,1fr);
+    top:190px;
+    background-color: lightgray;
+    padding:10px;
+    gap:300px;
+}
+
+.grid-6 a{
+    text-decoration: none;
+    color:gray;
+    padding:0px;
+    margin:0px;
+}
+
+.grid-7, .grid-8{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:0px;
+}
+
+.btn{
+    display:inline-block;
+    cursor: pointer;
+    background-color: #047aed;
+    color:#fff;
+    border:none;
+    border-radius: 5px;
+    font-weight:lighter;
+}
+
+.btn-1{
+    display: inline-block;
+    cursor: pointer;
+    padding:10px;
+    font-size: 15px;
+    font-weight:lighter;
+    background-color: rgb(211, 211, 211);
+    border-style: none;
+}
+
+.main .logo{
+    margin-top: 115px;
+    background-image: "images/google.png";
+}
+
+.main input[type="text"]{
+    position:relative;
+    width:200%;
+    background-image:url('https://img.icons8.com/search'),url(https://cdn-icons-png.flaticon.com/512/3128/3128290.png);
+    background-size: 3.5%;
+    background-repeat: no-repeat,no-repeat;
+    background-position:10px,600px;
+    padding-left:40px;
+    border-radius: 100px;
+    padding-top:12px;
+    padding-bottom:12px;
+    font-size:20px;
+    right: 150px;
+    bottom:10px;
+}
+
+::placeholder{
+    font-size:20px;
+}
+
